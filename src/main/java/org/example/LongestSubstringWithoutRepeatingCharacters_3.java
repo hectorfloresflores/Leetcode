@@ -2,6 +2,19 @@ package org.example;
 
 import java.util.HashSet;
 
+/**
+ Intuition:
+ My first intuition was to have a pointer and expand the pointer to the left and to the right.
+ Then realized I could use sliding window approach.
+
+ Approach:
+ Sliding window approach.
+
+ Complexity:
+    Time complexity: O(n)
+    Space complexity: O(1)
+ */
+
 public class LongestSubstringWithoutRepeatingCharacters_3 {
 
     /**

@@ -5,13 +5,6 @@ import java.util.HashMap;
 
 public class TwoSum_1 {
 
-    /**
-     * Time Complexity:  O(n)
-     * Space Complexity: O(n)
-     * @param nums
-     * @param target
-     * @return
-     */
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
         int[] result = new int[2];
