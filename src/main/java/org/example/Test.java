@@ -1,5 +1,35 @@
 package org.example;
 
+/**
+ *
+
+ Description:
+
+
+ Example 1:
+
+
+ Example 2:
+
+
+ Intuition:
+
+ Approach:
+
+
+ functionName:
+
+ Case 1:
+ Case 2:
+
+ Complexity with array memorization:
+ Time complexity:
+ Space complexity:
+
+
+ Constraints:
+
+ */
 public class Test {
 
     public boolean exist(char[][] board, String word) {
