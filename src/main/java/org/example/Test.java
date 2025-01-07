@@ -1,5 +1,8 @@
 package org.example;
 
+import java.io.InputStream;
+import java.util.Scanner;
+
 /**
  *
 
@@ -89,6 +92,15 @@ public class Test {
     }
 
     public static void main(String[] args) {
+
+        InputStream source = System.in;
+        Scanner in = new Scanner(source);
+        while(in.hasNext()){
+            String input = in.next(); // Use in.nextLine() for line-by-line reading
+
+            // Process the input here. For example, you could print it out:
+            System.out.println(input);
+        }
 
         Test sol = new Test();
         //System.out.println( sol.exist(new char[][]{{'A','B'},{'C','D'}}, "AB"));
