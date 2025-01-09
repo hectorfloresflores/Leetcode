@@ -1,5 +1,11 @@
 package org.example;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.InputStream;
+import java.lang.runtime.ObjectMethods;
+import java.util.Scanner;
+
 /**
  *
 
@@ -70,19 +76,23 @@ public class SearchinRotatedSortedArray_33 {
 
     int recursiveSearch(int[] nums, int left, int right) {
 
-        // Check that binary search does not
+        // Return right away in case left match target value
         if (nums[left] == target) {
             return left;
         }
 
+        // Return right away in case left match target value
         if (nums[right] == target) {
             return right;
         }
 
+        // If none of left of right found value
         if (left == right) {
+            // Return value in case found when pointers collapse.
             if (nums[left] == target) return left;
             return -1;
         }
+
 
         int middle = left + Math.floorDiv(right - left, 2);
         // Case 2: Check if it is in valid range or if target can possibly be in range and if left has rotated array.
@@ -94,7 +104,19 @@ public class SearchinRotatedSortedArray_33 {
     }
 
     public static void main(String[] args) {
-        SearchinRotatedSortedArray_33 sol = new SearchinRotatedSortedArray_33();
-        System.out.println(sol.search(new int[]{8,9,2,3,4}, 9));
+
+        //SearchinRotatedSortedArray_33 sol = new SearchinRotatedSortedArray_33();
+        //System.out.println(sol.search(new int[]{8,9,2,3,4}, 9));
+        //ObjectMapper
+        //inputObjectMapper.readValue(expectedString[0],Integer[].class);
+        InputStream source = System.in;
+        Scanner in = new Scanner(source);
+
+        while(in.hasNext()){
+            String input = in.next(); // Use in.nextLine() for line-by-line reading
+
+            // Process the input here. For example, you could print it out:
+            System.out.println(input);
+        }
     }
 }

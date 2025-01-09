@@ -8,27 +8,25 @@ import java.util.Scanner;
 
  Description:
 
-
  Example 1:
-
 
  Example 2:
 
+ Example 3:
 
  Intuition:
 
  Approach:
 
-
  functionName:
 
- Case 1:
- Case 2:
+   Case 1:
+   Case 2:
+   All Cases:
 
  Complexity with array memorization:
  Time complexity:
  Space complexity:
-
 
  Constraints:
 
@@ -92,6 +90,12 @@ public class Test {
     }
 
     public static void main(String[] args) {
+
+        char[] palabra = new char[]{'h', 'o', 'l', 'a'};
+
+        for (int i = 0; i < palabra.length; i++) {
+            System.out.print(palabra[i]);
+        }
 
         InputStream source = System.in;
         Scanner in = new Scanner(source);

@@ -1,19 +1,25 @@
 package org.example;
 
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.Stack;
-
-//Definition for singly-linked list.
-class ListNode {
-   int val;
-   ListNode next;
-   ListNode() {}
-   ListNode(int val) { this.val = val; }
-   ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}
-
 /**
+ *
+ Description:
+ 2. Add Two Numbers
+ You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+ You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+ Example 1:
+ Input: l1 = [2,4,3], l2 = [5,6,4]
+ Output: [7,0,8]
+ Explanation: 342 + 465 = 807.
+
+ Example 2:
+ Input: l1 = [0], l2 = [0]
+ Output: [0]
+
+ Example 3:
+ Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+ Output: [8,9,9,9,0,0,0,1]
+
  Intuition:
  My first intuition is to keep track of each integer while traversing the single linked list.
  We can make use of bit shift so when we start saving each number we shifted properly.
@@ -28,11 +34,33 @@ class ListNode {
  Approach:
  Addition list starting form left to right and keeping HEAD and TAIL pointers.
 
+ addTwoNumbers: Since list are stores in reverse order I start making the sum without reversing the list
+
+    Case 1: If any of lists has a next element add that element to the sum.
+    Case 2:
+
+ Complexity with array memorization:
+ Time complexity:
+ Space complexity:
+
+
+ Constraints:
+
+
  Complexity:
  Time complexity: O(n) Traversing both list at the same time.
  Space complexity: O(n) The new list
  */
 public class AddTwoNumbers_2 {
+
+    //Definition for singly-linked list.
+    static class ListNode {
+        int val;
+        ListNode next;
+        ListNode() {}
+        ListNode(int val) { this.val = val; }
+        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
