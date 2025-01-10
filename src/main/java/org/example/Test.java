@@ -24,7 +24,7 @@ import java.util.Scanner;
    Case 2:
    All Cases:
 
- Complexity with array memorization:
+ Complexity:
  Time complexity:
  Space complexity:
 
