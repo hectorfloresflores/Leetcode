@@ -79,8 +79,6 @@ public class MergeIntervals_56 {
         }
 
         return ranges;
-
-
     }
 
     // i think this solution it is linear, but I do not understand it.
